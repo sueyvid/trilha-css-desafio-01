@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
 body {
-    width: 1440px;
     background: #000000;
     font-family: Raleway;
     color: white;
@@ -39,10 +38,12 @@ h2 {
 /************* banner ************/
 .banner {
     height: 605px;
-    background-color: #33A8DB;
-    background-image: url("../images/banner.png"), linear-gradient(#00000099, #31A8DD00);
-    background-position: bottom;
-    border-bottom: 1px solid currentColor;
+    /*background-color: #33A8DB;*/
+    background-image: linear-gradient(#00000099, #31A8DD33, #00000099), url("../images/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: bottom;*/
+    border-bottom: 1px solid #33A8DB;
     object-position: center;
 }
 
@@ -78,7 +79,7 @@ h2 {
 }
 
 .banner-content button {
-    padding: 19px 91px;
+    padding: 19px 32px;
     border: 2px solid #3BA1CD;
     background: transparent;
     font-size: 16px;
@@ -89,6 +90,8 @@ h2 {
     color: transparent;
     background-clip: text;
     background-image: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    letter-spacing: 4px;
+    box-sizing: border-box;
 }
 
 /******** course *********/
@@ -158,8 +161,7 @@ section#professional-challenges * {
 /*********** footer ***********/
 footer {
     height: 170px;
-    background: linear-gradient(180deg, rgba(51, 168, 219, 0) 0%, rgba(51, 168, 219, 0.2) 99.99%, rgba(51, 168, 219, 0.2) 100%),
-linear-gradient(0deg, #33A8DB, #33A8DB);
+    background-image: linear-gradient(180deg, rgba(51, 168, 219, 0) 0%, rgba(51, 168, 219, 0.2) 99.99%, rgba(51, 168, 219, 0.2) 100%);
     border-top: 1px solid #33A8DB;
     padding-top: calc((170px - 44px - 19px) / 2);
     box-sizing: border-box;
